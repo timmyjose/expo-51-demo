@@ -10,7 +10,7 @@ import CameraDemo from './components/CameraDemo'
 
 Sentry.init({
   dsn: 'https://5171b01612800bbfb478898d89c49f27@o235927.ingest.us.sentry.io/4506813433249792',
-  debug: true
+  enabled: !__DEV__
 })
 
 export type RootStackParamsList = {
