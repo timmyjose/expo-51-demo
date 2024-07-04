@@ -24,6 +24,12 @@
     },
     "plugins": [
       [
+        "expo-camera", 
+        {
+          "cameraPermisson": "Allow ${PRODUCT_NAME} to access your camera."
+        }
+      ],
+      [
         "@sentry/react-native/expo",
         {
           "organization": "SENTRY_ORG",

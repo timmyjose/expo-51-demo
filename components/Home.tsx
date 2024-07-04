@@ -11,6 +11,7 @@ const Home = () => {
     <View style={styles.container}>
       <Button title='Sentry Demo' onPress={() => navigation.navigate('SentryDemo')} />
       <Button title='react-async-hook-demo' onPress={() => navigation.navigate('RAHDemo')} />
+      <Button title='Camera Demo' onPress={() => navigation.navigate('CameraDemo')} />
     </View>
   )
 }

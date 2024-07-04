@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import Home from './components/Home'
 import SentryDemo from './components/SentryDemo'
 import RAHDemo from './components/RAHDemo'
+import CameraDemo from './components/CameraDemo'
 
 Sentry.init({
   dsn: 'https://5171b01612800bbfb478898d89c49f27@o235927.ingest.us.sentry.io/4506813433249792',
@@ -16,6 +17,7 @@ export type RootStackParamsList = {
   Home: undefined
   SentryDemo: undefined
   RAHDemo: undefined
+  CameraDemo: undefined
 }
 
 const Stack = createNativeStackNavigator<RootStackParamsList>()
@@ -27,6 +29,7 @@ function App() {
         <Stack.Screen name='Home' component={Home} />
         <Stack.Screen name='SentryDemo' component={SentryDemo} />
         <Stack.Screen name='RAHDemo' component={RAHDemo} />
+        <Stack.Screen name='CameraDemo' component={CameraDemo} />
       </Stack.Navigator>
     </NavigationContainer>
   )
