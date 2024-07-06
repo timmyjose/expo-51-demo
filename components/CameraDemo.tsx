@@ -8,6 +8,7 @@ import { useNavigation } from '@react-navigation/native'
 export default function App() {
   const [facing, setFacing] = useState('back')
   const [permission, requestPermission] = useCameraPermissions()
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamsList>>()
 
   if (!permission) {
     // Camera permissions are still loading.
@@ -27,8 +28,6 @@ export default function App() {
   function toggleCameraFacing() {
     setFacing(current => (current === 'back' ? 'front' : 'back'))
   }
-
-  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamsList>>()
 
   return (
     <View style={styles.container}>
