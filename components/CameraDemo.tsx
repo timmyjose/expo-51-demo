@@ -5,7 +5,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamsList } from '../App'
 import { useNavigation } from '@react-navigation/native'
 
-export default function App() {
+export default function CemeraDemo() {
   const [facing, setFacing] = useState('back')
   const [permission, requestPermission] = useCameraPermissions()
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamsList>>()
